@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Master Craftsman Construction Ltd. in Surrey, British Columbia." />
+  <title>Contact | Master Craftsman Construction Ltd.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero page-hero--contact">
+      <div class="container reveal">
+        <p class="eyebrow eyebrow--light">Contact</p>
+        <h1>Let’s discuss your project.</h1>
+        <p>Share a few details and we’ll have a clear starting point for the conversation.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <aside class="contact-card reveal">
+          <div class="brand brand--stacked">
+            <span class="brand__mark" aria-hidden="true">MC</span>
+            <span class="brand__text">
+              <strong>Master Craftsman</strong>
+              <small>Construction Ltd.</small>
+            </span>
+          </div>
+
+          <div class="contact-card__details">
+            <p>15951 110A Avenue<br>Surrey, BC V4N 4Y2</p>
+            <p><a href="tel:+16045374700">604.537.4700</a></p>
+            <p><a href="mailto:mastercraftsman4700@gmail.com">mastercraftsman4700@gmail.com</a></p>
+          </div>
+        </aside>
+
+        <div class="contact-form-wrap reveal">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <small class="error"></small>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+                <small class="error"></small>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" />
+                <small class="error"></small>
+              </div>
+
+              <div class="field">
+                <label for="projectType">Project Type</label>
+                <select id="projectType" name="projectType" required>
+                  <option value="">Select a project type</option>
+                  <option>Residential</option>
+                  <option>Multifamily</option>
+                  <option>Commercial</option>
+                  <option>Other</option>
+                </select>
+                <small class="error"></small>
+              </div>
+
+              <div class="field field--full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <small class="error"></small>
+              </div>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Send Message</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
